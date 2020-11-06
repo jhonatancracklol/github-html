@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="esp">
+	<head>
+	<meta charset="uff-8">
+	<meta name="description" content="introduccion menus"/>
+	<meta name="keywords" content=css, menus,html"/>
+	<link rel="stylesheet" href="pagina/estilosinternos.css"/>
+	<link rel="icon" type="image.lpeg" href="pagina/icono.png" />
+	<title>estilos internos</title>
+	</head>
+	<body>
+	
+	
+	
+	<title>estilos internos</title>
+	</head>
+	<body>
+
+	<header>
+				<h1></h1>	
+		<nav>
+			<ul>
+				<li><a href="inicio.html">inicio</a></li>
+				<li><a href="ccs3.html">css3</a></li>
+				<li><a href="Estilos internos.html">Estilos internos</a></li>
+				<li><a href="Estilos externos.html">Estilos externos</a></li>
+				<li><a href="selectores ccs.html">selectores ccs</a></li>
+				<li><a href="autor.html">autor</a></li>
+			</ul>
+		</nav>
+	
+		</header>
+		
+		<div id="menu" style="float:left; margin:10px">
+			<ul>
+				
+			</ul>
+		</div>
+
+		<section id="infoprincipal">
+
+		<marquee width="50%" direction="right">
+        <h1> vienvenidos a estilos internos </h1></marquee><br><br>
+        <br><br>
+
+		</p><section id="colorletra">
+		<p align="left">
+
+			<br><br>
+
+		</p><p><span><font color="White"></font></span>
+				<video width="700" height="600" controls="">
+				<source src="pagina/estilos internos/estilo interno.mp4" type="video/mp4; codecs=" avc1.42e01e,mp4a.40.2"�="">
+				</video>
+
+				<br><br><br><br>
+			
+    
+        
+<div id="page" class="full-article">
+	<div class="article-rel-wrapper">
+					<h1 class="contentheading">
+							<a href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=713:formas-de-aplicar-css-interno-y-externo-link-rel-y-archivos-de-extension-css-comentarios-css-cu01010d&amp;catid=75&amp;Itemid=203">
+				Formas de aplicar CSS: interno  </a>
+						</h1>
+			</div>
+
+			<div class="article-info">
+	
+	<p class="iteminfo">
+			</p>
+
+	<p class="articleinfo">
+						</p>
+
+			</div>
+				<br>
+				<br>
+				<br>
+<p>
+	
+
+
+	<div style="text-align: center;">
+		<img src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/logo_css.jpg" width="300" height="300" style="float:left; margin:10px">
+
+</p><section id="colorletra">
+<p align="left">
+	<br>
+				<br>
+
+
+	</p><p><span>FORMAS DE APLICAR CCS</span><br><br>
+		<br>
+				<br>
+				<br>
+
+		Ya hemos visto que existen estilos por defecto que aplican automáticamente los navegadores web cuando no hay estilos especificados, así como que podemos embeber código CSS en las propias etiquetas de HTML, “en línea”. Vamos a ver ahora dos formas adicionales de aplicar estilos CSS: en la parte inicial del documento HTML (aplicación de estilos interna o CSS interno) o en un archivo de extensión .css independiente del archivo HTML (aplicación de estilos externa o CSS externo).</p>
+
+
+				<br><br>
+				<br><br>
+				<br><br>
+				<br><br>
+				
+
+    </p><section id="colorletra">
+		<p align="left">
+            
+		Volvemos a lo que hemos denominado código HTML base para el desarrollo del curso, código HTML donde no se aplican estilos.</p>
+
+		<br>
+<p>
+	En el epígrafe anterior vimos cómo aplicábamos estilos CSS en línea con este ejemplo:</p>
+	<br>
+				<br>
+				<br>
+<div style="text-align: left">
+	<div style="text-align: left">
+		<div style="text-align: left">
+
+			
+
+			
+			<center>
+				<table align="center" bgcolor="#8F8FBD" border="6" cellpadding="10" cellspacing="1" width="666">
+					<tbody>
+						<tr>
+							<td valign="top">
+								<p>
+									&lt;ul <strong>style = "color: pink;"</strong>&gt;<br>
+									&lt;li&gt;&lt;a href="#" <strong>style = "color: green; </strong><strong>text-decoration: none;"</strong>&gt;Inicio&lt;/a&gt;&lt;/li&gt;<br>
+									&lt;li&gt; &lt;a href="libros.html" <strong>style = "color: green; </strong><strong>text-decoration: none;"</strong>&gt;Libros de programación&lt;/a&gt; &lt;/li&gt;<br>
+									&lt;li&gt; &lt;a href="cursos.html" <strong>style = "color: green; </strong><strong>text-decoration: none;"</strong>&gt;Cursos de programación&lt;/a&gt; &lt;/li&gt;<br>
+									&lt;li&gt; &lt;a href="humor.html" <strong>style = "color: green; </strong><strong>text-decoration: none;"</strong>&gt;Humor informático&lt;/a&gt; &lt;/li&gt;<br>
+									&lt;/ul&gt;</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			<br>
+			<br>
+			<br>
+			<p style="text-align: justify;">
+				&nbsp;</p>
+			<p>
+				<strong>CSS INTERNO</strong></p>
+			<p>
+				<br>
+				Vamos a ver ahora como podemos definir esos estilos en la cabecera del documento HTML usando la siguiente sintaxis:</p>
+			<br>
+			<br>
+				<center>
+					<table align="center" bgcolor="	#9F5F9F" border="5" cellpadding="7" cellspacing="4" width="100">
+					<tbody>
+						<tr>
+							<td>
+
+								&lt;head&gt;<br>
+								…<br>
+								&lt;style type="text/css"&gt;<br>
+								elementoAfectadoPorElEstilo {<br>
+								propiedad1ParaEseTipoDeElementos:valor;<br>
+								propiedad2ParaEseTipoDeElementos:valor;<br>
+								propiedad3ParaEseTipoDeElementos:valor;<br>
+								…<br>
+								propiedadnParaEseTipoDeElementos:valor;<br>
+								}<br>
+								&lt;/style&gt;<br>
+								&lt;/head&gt;</td>
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			<p style="text-align: justify;">
+				&nbsp;</p>
+				<p style="text-align: justify;">
+				Las diferentes propiedades y valores se pueden poner en una misma línea o en distintas líneas según se prefiera (siempre separados mediante punto y coma).</p>
+<br>
+				<p style="text-align: justify;">
+				Dentro de las etiquetas (&lt;head&gt; … &lt;/head&gt;) incluiremos una etiqueta de apertura de declaración de estilos (&lt;style type=”text/css”&gt;), a continuación colocaremos la definición de tantos estilos como deseemos y cerraremos la declaración con (&lt;/style&gt;). En HTML 5 no es necesario especificar type =”text/css” pero de momento seguimos recomendando que se use esta sintaxis.</p>
+			<br>
+				<p style="text-align: justify;">
+				En nuestro código de ejemplo el cambio de los elementos del menú para que tengan el texto color verde y el icono o símbolo de viñeta de color rojo se haría de esta forma:</p>
+			<br>
+			<br>
+			
+				<center>
+				<table align="center" bgcolor="#bdbdbd" border="5" cellpadding="7" cellspacing="2" width="662">
+					<tbody>
+						<tr>
+							<td valign="top">
+								<p>
+									&lt;!DOCTYPE html&gt;<br>
+									<span style="color:#008000;">&lt;!-- Código ejemplo para el curso CSS --&gt;</span><br>
+									&lt;html&gt;<br>
+									&lt;head&gt;<br>
+									&lt;title&gt;Portal web - aprenderaprogramar.com&lt;/title&gt;<br>
+									&lt;meta charset="utf-8"&gt;<br>
+									&lt;meta name="description" content="Portal web aprenderaprogramar.com"&gt;<br>
+									&lt;meta name="keywords" content="aprender, programar, cursos, libros"&gt;<br>
+									<strong>&lt;style type="text/css"&gt;</strong><br>
+									<strong>ul {color:red;}</strong><br>
+									<strong>a {color:green; text-decoration: none;}</strong><br>
+									<strong>&lt;/style&gt;</strong><br>
+									&lt;/head&gt;<br>
+									<span style="color:#008000;">&lt;!-- Contenido de la página web --&gt;</span><br>
+									&lt;body&gt;<br>
+									<span style="color:#008000;">&lt;!-- Cabecera de la página web --&gt;</span><br>
+									&lt;div&gt;<br>
+									&lt;h1&gt;Portal web aprenderaprogramar.com&lt;/h1&gt;<br>
+									&lt;h2&gt;Didáctica y divulgación de la programación&lt;/h2&gt;<br>
+									&lt;/div&gt;<br>
+									<span style="color:#008000;">&lt;!-- Fin de la cabecera de la página web --&gt;</span><br>
+									&lt;br /&gt;<br>
+									<span style="color:#008000;">&lt;!-- Contenedor para la parte central --&gt;</span><br>
+									&lt;div&gt;<br>
+									<span style="color:#008000;">&lt;!-- menu --&gt;</span><br>
+									&lt;div&gt;<br>
+									&lt;div&gt;Menú&lt;/div&gt;<br>
+									&lt;hr/&gt;<br>
+									&lt;ul&gt;<br>
+									&lt;li&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt;<br>
+									&lt;li&gt; &lt;a href="libros.html"&gt;Libros de programación&lt;/a&gt; &lt;/li&gt;<br>
+									&lt;li&gt; &lt;a href="cursos.html"&gt;Cursos de programación&lt;/a&gt; &lt;/li&gt;<br>
+									&lt;li&gt; &lt;a href="humor.html"&gt;Humor informático&lt;/a&gt; &lt;/li&gt;<br>
+									&lt;/ul&gt;<br>
+									&lt;/div&gt;<br>
+									<span style="color:#008000;">&lt;!-- fin menu --&gt;</span><br>
+									<strong><span style="color:#008000;">&lt;!-- Aquí el resto del código del ejemplo --&gt;</span></strong><br>
+									&lt;/html&gt;</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			<br>
+			<p style="text-align: justify;">
+				&nbsp;</p>
+			<p style="text-align: justify;">
+				&nbsp;</p>
+			<p>
+				Puedes comprobar que hemos usado las mismas propiedades CSS y los mismos valores que usábamos en línea.</p>
+			<p>
+				Visualiza la página en tu navegador. El resultado para el menú será el mismo que cuando aplicamos CSS en línea:</p>
+			<br>
+			<br>
+			
+				<p style="text-align: center;">
+				<img alt="css en linea" src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/CU01009D_5.jpg" style="width: 474px; height: 192px; border-width: 1px; border-style: solid;"></p>
+		</div>
+	</div>
+	<div style="text-align: left">
+		&nbsp;</div>
+	<div style="text-align: left">
+		&nbsp;</div>
+	<br>
+	<p style="text-align: justify;">
+		No obstante podrás comprobar que hay otros elementos de la página web que también se ven afectados, por ejemplo los links presentes en el texto. Esto se debe a que hay una diferencia importante entre aplicar estilos CSS en línea y aplicarlos como CSS interno en la cabecera &lt;head&gt; … &lt;/head&gt; del documento HTML. Al aplicar estilos en línea, tenemos que repetir la aplicación de estilos en cada una de las líneas que queramos modificar y en cada ocasión afectamos a <strong>únicamente una línea</strong>. Con la aplicación de estilos interna nos basta con declarar una vez el estilo y el tipo de elemento al que se aplica, y automáticamente se aplicará <strong>a todos</strong> los elementos de ese tipo existentes dentro de la página web. Esto permite que en una página web de gran extensión nos ahorremos tener que escribir múltiples veces la definición de estilos (una en cada línea), ya que una sola declaración inicial nos bastará, lo cual es una ventaja bastante evidente.</p>
+	<br>
+		<p style="text-align: justify;">
+		Sin embargo ahora surge una cuestión adicional: es posible que tengamos dos o más listas de tipo &lt;ul&gt; y en algunos casos, por ejemplo menús, queramos aplicar un estilo, y en otros casos, por ejemplo listas de elementos dentro de un artículo periodístico, queramos aplicar otro estilo. También es posible que deseemos que los elementos del menú sean links con texto verde y sin subrayado, pero queramos mantener el resto de links como texto azul con subrayado. Tal y como hemos hecho la definición de estilos no conseguimos hacer esto, ya que estamos modificando <strong>todas</strong> las listas y <strong>todos</strong> los links presentes en el documento. CSS permite resolver satisfactoriamente esta problemática para aplicar estilos específicamente allí donde queremos. Veremos cómo próximamente.</p>
+	<p>
+		&nbsp;</p>
+	<p>
+		&nbsp;</p>
+	<p>
+		<br>
+		referencias de texto:
+		<br>
+		https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=713:formas-de-aplicar-css-interno-y-externo-link-rel-y-archivos-de-extension-css-comentarios-css-cu01010d&catid=75&Itemid=203
+		
+</p></section></section>
+
+		
+	
+		
+
+</body></html>

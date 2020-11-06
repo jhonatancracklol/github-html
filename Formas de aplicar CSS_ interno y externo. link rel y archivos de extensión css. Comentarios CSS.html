@@ -1,0 +1,1612 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0205)https://www.aprenderaprogramar.com/index.php?option=com_content&view=article&id=713:formas-de-aplicar-css-interno-y-externo-link-rel-y-archivos-de-extension-css-comentarios-css-cu01010d&catid=75&Itemid=203 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es-es" lang="es-es" slick-uniqueid="3"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		
+	<meta name="keywords" content="css, ejemplos, codigo, interno, externo, etiquetas, style, type, link, rel, head, html, tutorial, programacion, aprender, ventajas, inconvenientes, sobreescritura">
+	<meta name="author" content="César Krall">
+	<meta name="description" content="Entrega nº10 del tutorial básico del programador web: CSS desde cero. Formas adicionales de aplicar estilos CSS: en la parte inicial del documento HTML (aplicación de estilos interna o CSS interno) o en un archivo de extensión .css independiente del archivo HTML (aplicación de estilos externa o CSS externo). Uso de las etiquetas style y link. Atributos type y rel.">
+	<meta name="generator" content="Joomla! - Open Source Content Management">
+	<title>Formas de aplicar CSS: interno y externo. link rel y archivos de extensión css. Comentarios CSS (CU01010D)</title>
+	<link href="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/modal.css" rel="stylesheet" type="text/css">
+	<link href="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/attachments_hide.css" rel="stylesheet" type="text/css">
+	<link href="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/attachments_list.css" rel="stylesheet" type="text/css">
+	<link href="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/template.css" rel="stylesheet" type="text/css">
+	<link href="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/style6.css" rel="stylesheet" type="text/css">
+	<link href="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/typography.css" rel="stylesheet" type="text/css">
+	<link href="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/system.css" rel="stylesheet" type="text/css">
+	<link href="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/general.css" rel="stylesheet" type="text/css">
+	<link href="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/rokmoomenu.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+
+	div.wrapper { margin: 0 auto; width: 1024px;padding:0;}
+	#leftcol { width:0px;padding:0;float:left;}
+	#rightcol { width:210px;padding:0;}
+	#main-body { width:794px;padding:0;float:left;}
+	#maincol { width:749px;padding:0;float:right;}
+	#inset-block-left { width:0px;padding:0;}
+	#inset-block-right { width:0px;padding:0;}
+	#maincontent-block { margin-right:0px;margin-left:0px;}
+
+div.mod_search87 input[type="search"]{ width:auto; }
+	</style>
+	<script src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/osd.js.descarga"></script><script src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/f(6).txt"></script><script src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/f(7).txt" id="google_shimpl"></script><script type="application/json" class="joomla-script-options new">{"csrf.token":"d650a4b7ff11fd09ea1e7cb0f3171413","system.paths":{"root":"","base":""}}</script>
+	<script src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/mootools-core.js.descarga" type="text/javascript"></script>
+	<script src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/core.js.descarga" type="text/javascript"></script>
+	<script src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/mootools-more.js.descarga" type="text/javascript"></script>
+	<script src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/modal.js.descarga" type="text/javascript"></script>
+	<script src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/jquery.min.js.descarga" type="text/javascript"></script>
+	<script src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/jquery-noconflict.js.descarga" type="text/javascript"></script>
+	<script src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/jquery-migrate.min.js.descarga" type="text/javascript"></script>
+	<script src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/attachments_refresh.js.descarga" type="text/javascript"></script>
+	<script src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/bootstrap.min.js.descarga" type="text/javascript"></script>
+	<script src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/caption.js.descarga" type="text/javascript"></script>
+	<script src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/rokfonts.js.descarga" type="text/javascript"></script>
+	<script src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/rokutils.js.descarga" type="text/javascript"></script>
+	<script src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/rokutils.inputs.js.descarga" type="text/javascript"></script>
+	<script src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/rokmoomenu.js.descarga" type="text/javascript"></script>
+	<script src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/mootools.bgiframe.js.descarga" type="text/javascript"></script>
+	<!--[if lt IE 9]><script src="/media/system/js/html5fallback.js?5d2768659133ccacb78d2b7a0ba7a6a3" type="text/javascript"></script><![endif]-->
+	<script type="text/javascript">
+
+		jQuery(function($) {
+			SqueezeBox.initialize({});
+			initSqueezeBox();
+			$(document).on('subform-row-add', initSqueezeBox);
+
+			function initSqueezeBox(event, container)
+			{
+				SqueezeBox.assign($(container || document).find('a.modal').get(), {
+					parse: 'rel'
+				});
+			}
+		});
+
+		window.jModalClose = function () {
+			SqueezeBox.close();
+		};
+
+		// Add extra modal close functionality for tinyMCE-based editors
+		document.onreadystatechange = function () {
+			if (document.readyState == 'interactive' && typeof tinyMCE != 'undefined' && tinyMCE)
+			{
+				if (typeof window.jModalClose_no_tinyMCE === 'undefined')
+				{
+					window.jModalClose_no_tinyMCE = typeof(jModalClose) == 'function'  ?  jModalClose  :  false;
+
+					jModalClose = function () {
+						if (window.jModalClose_no_tinyMCE) window.jModalClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+
+				if (typeof window.SqueezeBoxClose_no_tinyMCE === 'undefined')
+				{
+					if (typeof(SqueezeBox) == 'undefined')  SqueezeBox = {};
+					window.SqueezeBoxClose_no_tinyMCE = typeof(SqueezeBox.close) == 'function'  ?  SqueezeBox.close  :  false;
+
+					SqueezeBox.close = function () {
+						if (window.SqueezeBoxClose_no_tinyMCE)  window.SqueezeBoxClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+			}
+		};
+		
+jQuery(function($){ initTooltips(); $("body").on("subform-row-add", initTooltips); function initTooltips (event, container) { container = container || document;$(container).find(".hasTooltip").tooltip({"html": true,"container": "body"});} });
+jQuery(window).on('load',  function() {
+				new JCaption('img.caption');
+			});
+		jQuery(function($) {
+			SqueezeBox.initialize({});
+			initSqueezeBox();
+			$(document).on('subform-row-add', initSqueezeBox);
+
+			function initSqueezeBox(event, container)
+			{
+				SqueezeBox.assign($(container || document).find('a.modal').get(), {
+					parse: 'rel'
+				});
+			}
+		});
+
+		window.jModalClose = function () {
+			SqueezeBox.close();
+		};
+
+		// Add extra modal close functionality for tinyMCE-based editors
+		document.onreadystatechange = function () {
+			if (document.readyState == 'interactive' && typeof tinyMCE != 'undefined' && tinyMCE)
+			{
+				if (typeof window.jModalClose_no_tinyMCE === 'undefined')
+				{
+					window.jModalClose_no_tinyMCE = typeof(jModalClose) == 'function'  ?  jModalClose  :  false;
+
+					jModalClose = function () {
+						if (window.jModalClose_no_tinyMCE) window.jModalClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+
+				if (typeof window.SqueezeBoxClose_no_tinyMCE === 'undefined')
+				{
+					if (typeof(SqueezeBox) == 'undefined')  SqueezeBox = {};
+					window.SqueezeBoxClose_no_tinyMCE = typeof(SqueezeBox.close) == 'function'  ?  SqueezeBox.close  :  false;
+
+					SqueezeBox.close = function () {
+						if (window.SqueezeBoxClose_no_tinyMCE)  window.SqueezeBoxClose_no_tinyMCE.apply(this, arguments);
+						tinyMCE.activeEditor.windowManager.close();
+					};
+				}
+			}
+		};
+		
+window.addEvent('domready', function() {
+		var modules = ['side-mod','module','moduletable'];
+		var header = ['h3'];
+		RokBuildSpans(modules, header);
+	});
+InputsExclusion.push('.content_vote')
+window.addEvent((window.webkit) ? 'load' : 'domready', function() {
+        new Rokmoomenu('ul.menutop ', {
+    		bgiframe: false,
+    		delay: 500,
+    		verhor: true,
+    		animate: {
+    			props: ['height'],
+    			opts: {
+    				duration: 500,
+    				fps: 100,
+    				transition: Fx.Transitions.Quad.easeOut
+    			}
+    		},
+    		bg: {
+    			enabled: true,
+    			overEffect: {
+    				duration: 500,
+    				transition: Fx.Transitions.Expo.easeOut
+    			},
+    			outEffect: {
+    				duration: 600,
+    				transition: Fx.Transitions.Sine.easeOut
+    			}
+    		},
+    		submenus: {
+    			enabled: false,
+    			opacity: 0.8,
+    			overEffect: {
+    				duration: 50,
+    				transition: Fx.Transitions.Expo.easeOut
+    			},
+    			outEffect: {
+    				duration: 600,
+    				transition: Fx.Transitions.Sine.easeIn
+    			},
+    			offsets: {
+    				top: 0,
+    				right: 1,
+    				bottom: 0,
+    				left: 1
+    			}
+    		}
+    	});
+    });
+	</script>
+
+			
+	<!--Added favicon, by aprenderaprogramar.com-->
+	<link rel="shortcut icon" href="https://www.aprenderaprogramar.com/templates/rt_affinity/images/favicon.ico">
+
+	
+	<link rel="preload" href="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/f(8).txt" as="script"><script type="text/javascript" src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/f(8).txt"></script><link rel="preload" href="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/f(9).txt" as="script"><script type="text/javascript" src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/f(9).txt"></script></head>
+	<body id="ff-geneva" class="f-default style6 iehandle">
+		<!--Begin Top Bar-->
+				<!--End Top Bar-->
+		<!--Begin Header-->
+		<div id="header">
+			<div id="header-overlay">
+				<div class="wrapper">
+										<a href="https://www.aprenderaprogramar.com/" id="logo" class="png"></a>
+																<div class=" search:87">
+		<div id="searchmod-surround">
+			<div class="searchmod-top"></div>
+			<div class="searchmod-main">
+								<div id="searchmod">
+					<div class="module">
+						<div class="search mod_search87">
+	<form action="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;id=75&amp;Itemid=203" method="post" class="form-inline" role="search">
+		<label for="mod-search-searchword87" class="element-invisible">Buscar...</label> <input name="searchword" id="mod-search-searchword87" maxlength="200" class="inputbox search-query input-medium" type="search" size="18" placeholder="Buscar..."> <button class="button btn btn-primary" onclick="this.form.searchword.focus();">Go!</button>		<input type="hidden" name="task" value="search">
+		<input type="hidden" name="option" value="com_search">
+		<input type="hidden" name="Itemid" value="203">
+	</form>
+</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+					<div class="extramenu"> <a href="https://www.aprenderaprogramar.com/index.php">  Inicio</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+<a href="https://www.aprenderaprogramar.com/index.php?option=com_osmap&amp;view=html&amp;id=1">  Mapa web</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+<a href="https://www.aprenderaprogramar.com/index.php?option=com_contact&amp;view=contact&amp;id=1&amp;Itemid=37">  Contacto  </a> </div>				</div>
+			</div>
+		</div>
+		<!--End Header-->
+		<div id="page-bg"><div id="page-bg2">
+			<div class="wrapper">
+				<!--Begin Horizontal Menu-->
+								<div id="horiz-menu" class="moomenu"><div id="horiz-menu2"><div id="horiz-menu3">
+									<ul class="menutop" style="overflow: visible;">
+			<li class="item46 top-menu-1">
+			<a class="topdaddy link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=featured&amp;Itemid=46" style="position: relative;">
+						<span>Inicio</span>
+		</a>	
+			
+<div class="animated-bg png" style="position: absolute; left: 0px; top: 0px; opacity: 0; width: 70px; height: 45px;"></div></li>	
+			<li class="item18 parent top-menu-2 ">
+			<a class="topdaddy link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=84&amp;Itemid=18" style="position: relative;">
+						<span>Cómo empezar</span>
+		</a>	
+				<div class="drop-wrap columns-1" style="overflow: visible; height: 90px;"><div class="png drop1"><div class="drop2"><div class="drop3"></div></div></div>
+	<ul class="png columns-1" style="overflow: hidden; height: 90px;">
+					
+			<li class="item80 parent  c-1 coltop">
+			<a class="daddy link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;id=23&amp;Itemid=80">
+						<span>LO MÁS BÁSICO</span>
+		</a>	
+				<div class="drop-wrap columns-1"><div class="png drop1"><div class="drop2"><div class="drop3"></div></div></div>
+	<ul class="png columns-1">
+					
+			<li class="item73  c-1 coltop">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=28&amp;Itemid=73">
+						<span>Quiero aprender a programar ¿Cómo empiezo?</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item77  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=35&amp;Itemid=77">
+						<span>¿Qué es y para qué sirve programar?</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item78  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=38&amp;Itemid=78">
+						<span>¿Qué pasos debemos dar para aprender a programar?</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item79  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=39&amp;Itemid=79">
+						<span>¿Qué lenguaje de programación estudiar o utilizar?</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item96  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=40&amp;Itemid=96">
+						<span>Pros y contras de internet para aprender programación</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item100  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=41&amp;Itemid=100">
+						<span>¿Se necesita programación para crear páginas web?</span>
+		</a>	
+			
+</li>	
+			</ul>
+	</div>
+		
+</li>	
+					
+			<li class="item81 parent  c-1">
+			<a class="daddy link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;id=19&amp;Itemid=81">
+						<span>CÓMO UTILIZAR aprenderaprogramar</span>
+		</a>	
+				<div class="drop-wrap columns-1"><div class="png drop1"><div class="drop2"><div class="drop3"></div></div></div>
+	<ul class="png columns-1">
+					
+			<li class="item102  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=43&amp;Itemid=102">
+						<span>¿Qué es y a quién va dirigido aprenderaprogramar?</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item74  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=44&amp;Itemid=74">
+						<span>¿Cómo utilizar aprenderaprogramar?</span>
+		</a>	
+			
+</li>	
+			</ul>
+	</div>
+		
+</li>	
+					
+			<li class="item189  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=39&amp;Itemid=189">
+						<span>ORIENTACIÓN ACADÉMICA</span>
+		</a>	
+			
+</li>	
+			</ul>
+	</div>
+		
+<div class="animated-bg png" style="position: absolute; left: 0px; top: 0px; opacity: 0; width: 135px; height: 45px;"></div></li>	
+			<li class="item26 parent top-menu-3 ">
+			<a class="topdaddy link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=87&amp;Itemid=26" style="position: relative;">
+						<span>Libros</span>
+		</a>	
+				<div class="drop-wrap columns-1" style="overflow: visible; height: 120px;"><div class="png drop1"><div class="drop2"><div class="drop3"></div></div></div>
+	<ul class="png columns-1" style="overflow: hidden; height: 120px;">
+					
+			<li class="item103 parent  c-1">
+			<a class="daddy link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;id=25&amp;Itemid=103">
+						<span>LIBROS EDITADOS POR aprenderaprogramar</span>
+		</a>	
+				<div class="drop-wrap columns-1"><div class="png drop1"><div class="drop2"><div class="drop3"></div></div></div>
+	<ul class="png columns-1">
+					
+			<li class="item211  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=693&amp;Itemid=211">
+						<span>Aprende a programar: pseudocódigo, diagramas de flujo...</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item106  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=97&amp;Itemid=106">
+						<span>Aprender a programar: algoritmos y fundamentos...</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item107  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=98&amp;Itemid=107">
+						<span>Introd. a la creación y administración web con Joomla</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item197  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=297&amp;Itemid=197">
+						<span>Aprender a programar Java desde cero, paso a paso</span>
+		</a>	
+			
+</li>	
+			</ul>
+	</div>
+		
+</li>	
+					
+			<li class="item105  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=101&amp;Itemid=105">
+						<span>Procedimiento de compra y envío de libros</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item174  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=86&amp;Itemid=174">
+						<span>Librerías y distribuidores</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item175  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=87&amp;Itemid=175">
+						<span>Cómo publicar un libro con nuestra editorial</span>
+		</a>	
+			
+</li>	
+			</ul>
+	</div>
+		
+<div class="animated-bg png" style="position: absolute; left: 0px; top: 0px; opacity: 0; width: 73px; height: 45px;"></div></li>	
+			<li class="item86 parent active top-menu-4 ">
+			<a class="topdaddy link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=57&amp;Itemid=86">
+						<span>Cursos</span>
+		</a>	
+				<div class="drop-wrap columns-1" style="overflow: visible; height: 450px;"><div class="png drop1"><div class="drop2"><div class="drop3"></div></div></div>
+	<ul class="png columns-1" style="overflow: hidden; height: 450px;">
+					
+			<li class="item59 c-1 ">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;id=28&amp;Itemid=59">
+						<span>Curso: Bases de la programación Nivel I. Pseudocódigo</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item60 c-1 ">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;id=36&amp;Itemid=60">
+						<span>Curso Bases de la programación Nivel II. Prog. modular</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item61 c-1 ">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;id=37&amp;Itemid=61">
+						<span>Curso Aprender a programar en Visual Basic desde cero</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item210 c-1 ">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;id=82&amp;Itemid=210">
+						<span>Curso básico de programación lenguaje C desde cero</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item188 c-1 ">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;id=68&amp;Itemid=188">
+						<span>Curso Aprender programación Java desde cero</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item180 c-1 ">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;id=58&amp;Itemid=180">
+						<span>Curso Lenguaje programación Java Nivel Avanzado I</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item192 c-1 ">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;id=69&amp;Itemid=192">
+						<span>Tutorial básico del programador web: HTML desde cero</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item203 active c-1 " id="current">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;id=75&amp;Itemid=203">
+						<span>Tutorial básico del programador web: CSS desde cero</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item193 c-1 ">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;id=70&amp;Itemid=193">
+						<span>Tutorial básico del programador web: PHP desde cero</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item206 c-1 ">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;id=78&amp;Itemid=206">
+						<span>Tutorial básico programador web: JavaScript desde cero</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item212 c-1 ">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;id=83&amp;Itemid=212">
+						<span>Tutorial básico programador web: Ajax desde cero</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item152 c-1 ">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;id=38&amp;Itemid=152">
+						<span>Curso Creación y administración web: Joomla desde cero</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item155 c-1 ">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=62&amp;Itemid=155">
+						<span>Tickets de soporte aprenderaprogramar</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item176 c-1 ">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=88&amp;Itemid=176">
+						<span>Itinerario formativo básico aprenderaprogramar</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item87  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=64&amp;Itemid=87">
+						<span>CURSOS TUTORIZADOS ON LINE - INSCRIPCIONES</span>
+		</a>	
+			
+</li>	
+			</ul>
+	</div>
+		
+</li>	
+			<li class="item32 parent top-menu-5">
+			<a class="topdaddy link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=89&amp;Itemid=32" style="position: relative;">
+						<span>Empleo</span>
+		</a>	
+				<div class="drop-wrap columns-1"><div class="png drop1"><div class="drop2"><div class="drop3"></div></div></div>
+	<ul class="png columns-1">
+					
+			<li class="item202  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=74&amp;Itemid=202">
+						<span>Encontrar empleo en el área de programación</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item156  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=40&amp;Itemid=156">
+						<span>Ofertas empleo aprenderaprogramar España</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item157  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=69&amp;Itemid=157">
+						<span>Ofertas empleo aprenderaprogramar México</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item158  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=69&amp;Itemid=158">
+						<span>Ofertas empleo aprenderaprogramar Argentina</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item159  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=69&amp;Itemid=159">
+						<span>Ofertas empleo aprenderaprogramar Chile</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item160  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=69&amp;Itemid=160">
+						<span>Ofertas empleo aprenderaprogramar Perú</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item161  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=69&amp;Itemid=161">
+						<span>Ofertas empleo aprenderaprogramar Colombia</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item162  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=69&amp;Itemid=162">
+						<span>Ofertas empleo aprenderaprogramar Venezuela</span>
+		</a>	
+			
+</li>	
+			</ul>
+	</div>
+		
+<div class="animated-bg png" style="position: absolute; left: 0px; top: 0px; opacity: 0; width: 82px; height: 45px;"></div></li>	
+			<li class="item48 parent top-menu-6">
+			<a class="topdaddy link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=90&amp;Itemid=48" style="position: relative;">
+						<span>Humor!!!</span>
+		</a>	
+				<div class="drop-wrap columns-1"><div class="png drop1"><div class="drop2"><div class="drop3"></div></div></div>
+	<ul class="png columns-1">
+					
+			<li class="item191  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_phocagallery&amp;view=categories&amp;Itemid=191">
+						<span>Dibujos humor informático</span>
+		</a>	
+			
+</li>	
+			</ul>
+	</div>
+		
+<div class="animated-bg png" style="position: absolute; left: 0px; top: 0px; opacity: 0; width: 92px; height: 45px;"></div></li>	
+			<li class="item52 parent top-menu-7">
+			<a class="topdaddy link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=91&amp;Itemid=52" style="position: relative;">
+						<span>Divulgación</span>
+		</a>	
+				<div class="drop-wrap columns-1"><div class="png drop1"><div class="drop2"><div class="drop3"></div></div></div>
+	<ul class="png columns-1">
+					
+			<li class="item163  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=46&amp;Itemid=163">
+						<span>Lenguajes y entornos</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item164  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=45&amp;Itemid=164">
+						<span>Tendencias en programación</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item165  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=47&amp;Itemid=165">
+						<span>Empresas y emprendedores</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item179  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=57&amp;Itemid=179">
+						<span>Herramientas informáticas</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item182  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=60&amp;Itemid=182">
+						<span>Servicios web gratutitos</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item201  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=73&amp;Itemid=201">
+						<span>De todo un poco</span>
+		</a>	
+			
+</li>	
+			</ul>
+	</div>
+		
+<div class="animated-bg png" style="position: absolute; left: 0px; top: 0px; opacity: 0; width: 113px; height: 45px;"></div></li>	
+			<li class="item53 parent top-menu-8">
+			<a class="topdaddy link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=92&amp;Itemid=53" style="position: relative;">
+						<span>Zona crash</span>
+		</a>	
+				<div class="drop-wrap columns-1"><div class="png drop1"><div class="drop2"><div class="drop3"></div></div></div>
+	<ul class="png columns-1">
+					
+			<li class="item177  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=54&amp;Itemid=177">
+						<span>Artículos para no dormir</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item204  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=76&amp;Itemid=204">
+						<span>Relatos, cuentos y ensayos</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item167  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_phocagallery&amp;view=category&amp;id=24&amp;Itemid=167">
+						<span>Dibujos Crash</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item168  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_phocagallery&amp;view=category&amp;id=28&amp;Itemid=168">
+						<span>Fotografías Crash</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item320  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=963&amp;Itemid=320">
+						<span>Remitidos</span>
+		</a>	
+			
+</li>	
+			</ul>
+	</div>
+		
+<div class="animated-bg png" style="position: absolute; left: 0px; top: 0px; opacity: 0; width: 107px; height: 45px;"></div></li>	
+			<li class="item183 parent top-menu-9">
+			<a class="topdaddy link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=96&amp;Itemid=183" style="position: relative;">
+						<span>Camisetas</span>
+		</a>	
+				<div class="drop-wrap columns-1"><div class="png drop1"><div class="drop2"><div class="drop3"></div></div></div>
+	<ul class="png columns-1">
+					
+			<li class="item198  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=64&amp;Itemid=198">
+						<span>Camisetas a todo color</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item199  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=63&amp;Itemid=199">
+						<span>Camisetas a 5 colores</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item200  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=684&amp;Itemid=200">
+						<span>Catálogo de camisetas humor informático</span>
+		</a>	
+			
+</li>	
+			</ul>
+	</div>
+		
+<div class="animated-bg png" style="position: absolute; left: 0px; top: 0px; opacity: 0; width: 102px; height: 45px;"></div></li>	
+			<li class="item34 parent top-menu-10">
+			<a class="topdaddy link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=94&amp;Itemid=34" style="position: relative;">
+						<span>Conócenos</span>
+		</a>	
+				<div class="drop-wrap columns-1"><div class="png drop1"><div class="drop2"><div class="drop3"></div></div></div>
+	<ul class="png columns-1">
+					
+			<li class="item171  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=51&amp;Itemid=171">
+						<span>Líneas de actividad</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item205  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=77&amp;Itemid=205">
+						<span>Publicidad en esta web [Advertising]</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item95  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=52&amp;Itemid=95">
+						<span>Qué nos diferencia</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item170  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=33&amp;Itemid=170">
+						<span>Dónde estamos</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item94  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=53&amp;Itemid=94">
+						<span>Quiénes somos</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item173  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=85&amp;Itemid=173">
+						<span>Cómo ser colaborador</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item178  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=100&amp;Itemid=178">
+						<span>Sistema de pagos seguros</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item172  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=84&amp;Itemid=172">
+						<span>Aviso legal</span>
+		</a>	
+			
+</li>	
+			</ul>
+	</div>
+		
+<div class="animated-bg png" style="position: absolute; left: 0px; top: 0px; opacity: 0; width: 106px; height: 45px;"></div></li>	
+			<li class="item186 top-menu-11">
+			<a class="topdaddy link" href="https://www.aprenderaprogramar.com/foros" style="position: relative;">
+						<span>Foros</span>
+		</a>	
+			
+<div class="animated-bg png" style="position: absolute; left: 0px; top: 0px; opacity: 0; width: 69px; height: 45px;"></div></li>	
+			<li class="item207 top-menu-12 ">
+			<a class="topdaddy link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=79&amp;Itemid=207" style="position: relative;">
+						<span>Freelancers</span>
+		</a>	
+			
+<div class="animated-bg png" style="position: absolute; left: 0px; top: 0px; opacity: 0; width: 111px; height: 45px;"></div></li>	
+			<li class="item208 top-menu-13 ">
+			<a class="topdaddy link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=80&amp;Itemid=208" style="position: relative;">
+						<span>Centros formativos</span>
+		</a>	
+			
+<div class="animated-bg png" style="position: absolute; left: 0px; top: 0px; opacity: 0; width: 164px; height: 45px;"></div></li>	
+			<li class="item281 top-menu-14">
+			<a class="topdaddy link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=109&amp;Itemid=281" style="position: relative;">
+						<span>Empresas</span>
+		</a>	
+			
+<div class="animated-bg png" style="position: absolute; left: 0px; top: 0px; opacity: 0; width: 98px; height: 45px;"></div></li>	
+			<li class="item306 parent top-menu-15">
+			<a class="topdaddy link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=112&amp;filter_tag[0]=2&amp;filter_tag[1]=3&amp;filter_tag[2]=4&amp;filter_tag[3]=5&amp;filter_tag[4]=6&amp;filter_tag[5]=7&amp;filter_tag[6]=8&amp;filter_tag[7]=9&amp;filter_tag[8]=10&amp;filter_tag[9]=11&amp;filter_tag[10]=12&amp;filter_tag[11]=13&amp;filter_tag[12]=16&amp;filter_tag[13]=21&amp;filter_tag[14]=22&amp;Itemid=306" style="position: relative;">
+						<span>Para niños</span>
+		</a>	
+				<div class="drop-wrap columns-1"><div class="png drop1"><div class="drop2"><div class="drop3"></div></div></div>
+	<ul class="png columns-1">
+					
+			<li class="item310  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;layout=blog&amp;id=116&amp;filter_tag[0]=2&amp;filter_tag[1]=3&amp;filter_tag[2]=4&amp;filter_tag[3]=5&amp;filter_tag[4]=6&amp;filter_tag[5]=7&amp;filter_tag[6]=8&amp;filter_tag[7]=9&amp;filter_tag[8]=10&amp;filter_tag[9]=11&amp;filter_tag[10]=12&amp;filter_tag[11]=13&amp;filter_tag[12]=14&amp;filter_tag[13]=15&amp;Itemid=310">
+						<span>Cosas interesantes sobre la programación y algoritmia</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item312  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=969&amp;Itemid=312">
+						<span>Didac-Prog Cartesia: descarga la aplicación y el manual</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item311  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;id=115&amp;Itemid=311">
+						<span>Curso de programación para niños con Didac-Pr Cartesia</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item318  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;id=117&amp;Itemid=318">
+						<span>Video curso tutorial programación para niños con Paula</span>
+		</a>	
+			
+</li>	
+					
+			<li class="item316  c-1">
+			<a class="link" href="https://www.aprenderaprogramar.com/cartesia2020">
+						<span>Didac-Pr Cartesia: aplicación online programación niños</span>
+		</a>	
+			
+</li>	
+			</ul>
+	</div>
+		
+<div class="animated-bg png" style="position: absolute; left: 0px; top: 0px; opacity: 0; width: 104px; height: 45px;"></div></li>	
+	</ul>
+								<div class="clr"></div>
+				</div></div></div>
+								<!--End Horizontal Menu-->
+				<div id="vertical-sort">
+				<div id="section-row3" class="section-row"><div id="section-row3-inner">
+			<div id="main-body-surround" class="spacer"><div id="main-body" class="spacing">
+						<div class="module-light"><div class="body-surround-top"><div class="body-surround-top2"><div class="body-surround-top3"></div></div></div>
+	<div class="body-surround"><div class="body-surround2"><div class="body-surround3">
+							<div id="main-content"><div id="maincol2">
+			  						<div class="maincol-padding"><div id="breadcrumbs"><div id="breadcrumbs2"><div id="breadcrumbs3"><a href="https://www.aprenderaprogramar.com/" id="breadcrumbs-home"></a>
+<div class="breadcrumbs">
+<span class="showHere">Está aquí: </span><a href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=featured&amp;Itemid=35" class="pathway">Inicio</a> <img src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/arrow.png" alt=""> <a href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=57&amp;Itemid=86" class="pathway">Cursos</a> <img src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/arrow.png" alt=""> <a href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;id=75&amp;Itemid=203" class="pathway">Tutorial básico del programador web: CSS desde cero</a> <img src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/arrow.png" alt=""> <span>Formas de aplicar CSS: interno y externo. link rel y archivos de extensión css. Comentarios CSS (CU01010D)</span></div>
+</div></div></div>
+			  							<div class="bodycontent">
+											<div class="mainbody-surround">
+			   									<div id="maincontent-block">
+													<div id="system-message-container">
+	</div>
+<div class="item-page">
+<div id="page" class="full-article">
+	<div class="article-rel-wrapper">
+					<h1 class="contentheading">
+							<a href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=713:formas-de-aplicar-css-interno-y-externo-link-rel-y-archivos-de-extension-css-comentarios-css-cu01010d&amp;catid=75&amp;Itemid=203">
+				Formas de aplicar CSS: interno y externo. link rel y archivos de extensión css. Comentarios CSS (CU01010D)</a>
+						</h1>
+			</div>
+
+
+
+	
+			
+			<div class="article-info">
+	
+	<p class="iteminfo">
+			</p>
+
+	<p class="articleinfo">
+						</p>
+
+			</div>
+	
+
+
+	
+	
+	
+			
+			
+				<div style="margin: 0px 0px 10px; text-align: justify;">
+	<span style="font-size: 16px; line-height: 115%;"><strong>Resumen: </strong></span><strong><span style="font-size: 12px;">Entrega nº10 del </span></strong><strong><span style="font-size: 12px;">Tutorial básico del programador web: CSS desde cero.</span></strong></div>
+<h6 style="text-align: justify;">
+	<span>Codificación aprenderaprogramar.com:&nbsp;CU01010D </span></h6>
+<p style="text-align: left;">
+	&nbsp;</p>
+<p style="text-align: left;">
+	&nbsp;</p>
+<p>
+	<strong>FORMAS DE APLICAR CSS</strong></p>
+<p style="text-align: justify;">
+	Ya hemos visto que existen estilos por defecto que aplican automáticamente los navegadores web cuando no hay estilos especificados, así como que podemos embeber código CSS en las propias etiquetas de HTML, “en línea”. Vamos a ver ahora dos formas adicionales de aplicar estilos CSS: en la parte inicial del documento HTML (aplicación de estilos interna o CSS interno) o en un archivo de extensión .css independiente del archivo HTML (aplicación de estilos externa o CSS externo).</p>
+<div style="text-align: center;">
+	<img alt="css" src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/logo_css.jpg" style="width: 64px; height: 80px;"></div>
+ 
+<p>
+	&nbsp;</p>
+<p>
+	Volvemos a lo que hemos denominado código HTML base para el desarrollo del curso, código HTML donde no se aplican estilos.</p>
+<p>
+	En el epígrafe anterior vimos cómo aplicábamos estilos CSS en línea con este ejemplo:</p>
+<div style="text-align: left">
+	<div style="text-align: left">
+		<div style="text-align: left">
+			<center>
+				<table align="center" bgcolor="#bdbdbd" border="1" cellpadding="7" cellspacing="1" width="666">
+					<tbody>
+						<tr>
+							<td valign="top">
+								<p>
+									&lt;ul <strong>style = "color: red;"</strong>&gt;<br>
+									&lt;li&gt;&lt;a href="#" <strong>style = "color: green; </strong><strong>text-decoration: none;"</strong>&gt;Inicio&lt;/a&gt;&lt;/li&gt;<br>
+									&lt;li&gt; &lt;a href="libros.html" <strong>style = "color: green; </strong><strong>text-decoration: none;"</strong>&gt;Libros de programación&lt;/a&gt; &lt;/li&gt;<br>
+									&lt;li&gt; &lt;a href="cursos.html" <strong>style = "color: green; </strong><strong>text-decoration: none;"</strong>&gt;Cursos de programación&lt;/a&gt; &lt;/li&gt;<br>
+									&lt;li&gt; &lt;a href="humor.html" <strong>style = "color: green; </strong><strong>text-decoration: none;"</strong>&gt;Humor informático&lt;/a&gt; &lt;/li&gt;<br>
+									&lt;/ul&gt;</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			<br>
+			<p style="text-align: justify;">
+				&nbsp;</p>
+			<p>
+				<strong>CSS INTERNO</strong></p>
+			<p>
+				Vamos a ver ahora cómo podemos definir esos estilos en la cabecera del documento HTML usando la siguiente sintaxis:</p>
+			<center>
+				<table border="1" cellpadding="14" cellspacing="1" width="349">
+					<tbody>
+						<tr>
+							<td>
+								&lt;head&gt;<br>
+								…<br>
+								&lt;style type="text/css"&gt;<br>
+								elementoAfectadoPorElEstilo {<br>
+								propiedad1ParaEseTipoDeElementos:valor;<br>
+								propiedad2ParaEseTipoDeElementos:valor;<br>
+								propiedad3ParaEseTipoDeElementos:valor;<br>
+								…<br>
+								propiedadnParaEseTipoDeElementos:valor;<br>
+								}<br>
+								&lt;/style&gt;<br>
+								&lt;/head&gt;</td>
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			<p style="text-align: justify;">
+				&nbsp;</p>
+			<p style="text-align: justify;">
+				&nbsp;</p>
+			<p>
+				Las diferentes propiedades y valores se pueden poner en una misma línea o en distintas líneas según se prefiera (siempre separados mediante punto y coma).</p>
+			<p style="text-align: justify;">
+				Dentro de las etiquetas &lt;head&gt; … &lt;/head&gt; incluiremos una etiqueta de apertura de declaración de estilos &lt;style type=”text/css”&gt;, a continuación colocaremos la definición de tantos estilos como deseemos y cerraremos la declaración con &lt;/style&gt;. En HTML 5 no es necesario especificar type =”text/css” pero de momento seguimos recomendando que se use esta sintaxis.</p>
+			<p style="text-align: justify;">
+				En nuestro código de ejemplo el cambio de los elementos del menú para que tengan el texto color verde y el icono o símbolo de viñeta de color rojo se haría de esta forma:</p>
+			<center>
+				<table align="center" bgcolor="#bdbdbd" border="1" cellpadding="7" cellspacing="1" width="662">
+					<tbody>
+						<tr>
+							<td valign="top">
+								<p>
+									&lt;!DOCTYPE html&gt;<br>
+									<span style="color:#008000;">&lt;!-- Código ejemplo para el curso CSS --&gt;</span><br>
+									&lt;html&gt;<br>
+									&lt;head&gt;<br>
+									&lt;title&gt;Portal web - aprenderaprogramar.com&lt;/title&gt;<br>
+									&lt;meta charset="utf-8"&gt;<br>
+									&lt;meta name="description" content="Portal web aprenderaprogramar.com"&gt;<br>
+									&lt;meta name="keywords" content="aprender, programar, cursos, libros"&gt;<br>
+									<strong>&lt;style type="text/css"&gt;</strong><br>
+									<strong>ul {color:red;}</strong><br>
+									<strong>a {color:green; text-decoration: none;}</strong><br>
+									<strong>&lt;/style&gt;</strong><br>
+									&lt;/head&gt;<br>
+									<span style="color:#008000;">&lt;!-- Contenido de la página web --&gt;</span><br>
+									&lt;body&gt;<br>
+									<span style="color:#008000;">&lt;!-- Cabecera de la página web --&gt;</span><br>
+									&lt;div&gt;<br>
+									&lt;h1&gt;Portal web aprenderaprogramar.com&lt;/h1&gt;<br>
+									&lt;h2&gt;Didáctica y divulgación de la programación&lt;/h2&gt;<br>
+									&lt;/div&gt;<br>
+									<span style="color:#008000;">&lt;!-- Fin de la cabecera de la página web --&gt;</span><br>
+									&lt;br /&gt;<br>
+									<span style="color:#008000;">&lt;!-- Contenedor para la parte central --&gt;</span><br>
+									&lt;div&gt;<br>
+									<span style="color:#008000;">&lt;!-- menu --&gt;</span><br>
+									&lt;div&gt;<br>
+									&lt;div&gt;Menú&lt;/div&gt;<br>
+									&lt;hr/&gt;<br>
+									&lt;ul&gt;<br>
+									&lt;li&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt;<br>
+									&lt;li&gt; &lt;a href="libros.html"&gt;Libros de programación&lt;/a&gt; &lt;/li&gt;<br>
+									&lt;li&gt; &lt;a href="cursos.html"&gt;Cursos de programación&lt;/a&gt; &lt;/li&gt;<br>
+									&lt;li&gt; &lt;a href="humor.html"&gt;Humor informático&lt;/a&gt; &lt;/li&gt;<br>
+									&lt;/ul&gt;<br>
+									&lt;/div&gt;<br>
+									<span style="color:#008000;">&lt;!-- fin menu --&gt;</span><br>
+									<strong><span style="color:#008000;">&lt;!-- Aquí el resto del código del ejemplo --&gt;</span></strong><br>
+									&lt;/html&gt;</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</center>
+			<p style="text-align: justify;">
+				&nbsp;</p>
+			<p style="text-align: justify;">
+				&nbsp;</p>
+			<p>
+				Puedes comprobar que hemos usado las mismas propiedades CSS y los mismos valores que usábamos en línea.</p>
+			<p>
+				Visualiza la página en tu navegador. El resultado para el menú será el mismo que cuando aplicamos CSS en línea:</p>
+			<p style="text-align: center;">
+				<img alt="css en linea" src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/CU01009D_5.jpg" style="width: 474px; height: 192px; border-width: 1px; border-style: solid;"></p>
+		</div>
+	</div>
+	<div style="text-align: left">
+		&nbsp;</div>
+	<div style="text-align: left">
+		&nbsp;</div>
+	<br>
+	<p style="text-align: justify;">
+		No obstante podrás comprobar que hay otros elementos de la página web que también se ven afectados, por ejemplo los links presentes en el texto. Esto se debe a que hay una diferencia importante entre aplicar estilos CSS en línea y aplicarlos como CSS interno en la cabecera &lt;head&gt; … &lt;/head&gt; del documento HTML. Al aplicar estilos en línea, tenemos que repetir la aplicación de estilos en cada una de las líneas que queramos modificar y en cada ocasión afectamos a <strong>únicamente una línea</strong>. Con la aplicación de estilos interna nos basta con declarar una vez el estilo y el tipo de elemento al que se aplica, y automáticamente se aplicará <strong>a todos</strong> los elementos de ese tipo existentes dentro de la página web. Esto permite que en una página web de gran extensión nos ahorremos tener que escribir múltiples veces la definición de estilos (una en cada línea), ya que una sola declaración inicial nos bastará, lo cual es una ventaja bastante evidente.</p>
+	<p style="text-align: justify;">
+		Sin embargo ahora surge una cuestión adicional: es posible que tengamos dos o más listas de tipo &lt;ul&gt; y en algunos casos, por ejemplo menús, queramos aplicar un estilo, y en otros casos, por ejemplo listas de elementos dentro de un artículo periodístico, queramos aplicar otro estilo. También es posible que deseemos que los elementos del menú sean links con texto verde y sin subrayado, pero queramos mantener el resto de links como texto azul con subrayado. Tal y como hemos hecho la definición de estilos no conseguimos hacer esto, ya que estamos modificando <strong>todas</strong> las listas y <strong>todos</strong> los links presentes en el documento. CSS permite resolver satisfactoriamente esta problemática para aplicar estilos específicamente allí donde queremos. Veremos cómo próximamente.</p>
+	<p>
+		&nbsp;</p>
+	<p>
+		&nbsp;</p>
+	<p>
+		<strong>CSS EXTERNO</strong></p>
+	<p style="text-align: justify;">
+		Aunque el CSS interno nos permite unificar en una declaración todos los estilos para un archivo html, seguimos teniendo el problema de tener que repetir la definición de estilos en la cabecera de cada uno de los archivos html de nuestro desarrollo web. Si el desarrollo tiene pocos archivos quizás sea menos problemático, pero cuando el desarrollo tiene cientos o miles de archivos sí se convierte en un verdadero problema, ya que cada vez que introdujéramos cambios habría que hacerlo en los cientos o miles de archivos de que constara el desarrollo.</p>
+	<p style="text-align: justify;">
+		Para solventar esta solución se ideó la declaración externa de CSS, basada en declarar los estilos CSS en un archivo independiente que puede servir como referente para dotar de estilos a decenas, cientos o miles de archivos html, que únicamente deberán invocar el nombre de archivo utilizando una sintaxis específica. De este modo un cambio en los estilos habrá que hacerlo únicamente en el archivo de estilos correspondiente, lo cual supone una gran ventaja. Incluso un cambio completo de los estilos de una página web se puede conseguir simplemente sustituyendo el archivo correspondiente.</p>
+	<p style="text-align: justify;">
+		Vamos a generar un archivo de estilos independiente. Para ello abre Notepad++ (o el editor de texto que estés usando) y crea un archivo con el siguiente contenido:</p>
+	<div style="text-align: left">
+		<center>
+			<table align="center" bgcolor="#bdbdbd" border="1" cellpadding="7" cellspacing="1" width="418">
+				<tbody>
+					<tr>
+						<td valign="top">
+							<p style="margin-left: 40px;">
+								/* Comentario en CSS estilos aprenderaprogramar.com*/<br>
+								ul {color:red;}<br>
+								a {color:green; text-decoration: none;}</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</center>
+		<p style="text-align: justify;">
+			&nbsp;</p>
+		<p style="text-align: justify;">
+			&nbsp;</p>
+	</div>
+	<div style="text-align: left">
+		<p style="text-align: justify;">
+			Seguimos usando las mismas propiedades CSS y los mismos valores que hemos usado en la forma CSS en línea y en la forma CSS interna.</p>
+		<p style="text-align: justify;">
+			Los contenidos que se encuentren entre los símbolos /* …. */ serán considerados comentarios y se pueden usar para introducir información del autor del archivo, versión, etc. así como para escribir aquellas aclaraciones sobre los estilos que se consideren necesarias. Un comentario puede comprender una o varias líneas según se desee.</p>
+		<p style="text-align: justify;">
+			Elige Guardar Como… y guarda el archivo con un nombre y extensión css, por ejemplo estilos.css. Asegúrate que la extensión del archivo sea css. No es válido si no tiene esta extensión.</p>
+		<p style="text-align: justify;">
+			En nuestro archivo HTML eliminaremos la definición de estilos interna y dejaremos sólo la invocación al archivo escrita con la siguiente sintaxis:</p>
+		<center>
+			<table border="1" cellpadding="7" cellspacing="1" width="522">
+				<tbody>
+					<tr>
+						<td>
+							<p style="margin-left: 40px;">
+								&lt;head&gt;</p>
+							<p style="margin-left: 40px;">
+								…</p>
+							<p style="margin-left: 40px;">
+								<strong>&lt;link rel="stylesheet" type="text/css" href="rutaDelArchivo.css"&gt;</strong></p>
+							<p style="margin-left: 40px;">
+								&lt;/head&gt;</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</center>
+		<p style="text-align: justify;">
+			&nbsp;</p>
+		<p style="text-align: justify;">
+			&nbsp;</p>
+		<p style="text-align: justify;">
+			link es una etiqueta que se usa en HTML para establecer vínculos entre un documento HTML y otros recursos como una imagen de icono o una hoja de estilos CSS. En este caso se indica con la propiedad rel (relación o relationship) que el documento HTML debe usar los estilos definidos como texto/css en un archivo con el nombre indicado. Ten en cuenta que si como ruta de archivo indicas simplemente el nombre del archivo, éste debe encontrarse en la misma carpeta en que se encuentre el documento HTML. Si el archivo CSS se encuentra en otra carpeta deberás indicarlo escribiendo una URL completa u bien una URL relativa que determine la ruta.</p>
+		<p style="text-align: justify;">
+			Nosotros ubicaremos de momento el archivo CSS en la misma carpeta que el archivo HTML. En el archivo HTML tendremos lo siguiente:</p>
+		<center>
+			<table align="center" bgcolor="#bdbdbd" border="1" cellpadding="7" cellspacing="1" width="662">
+				<tbody>
+					<tr>
+						<td valign="top">
+							<p>
+								&lt;!DOCTYPE html&gt;<br>
+								<span style="color:#008000;">&lt;!-- Código ejemplo para el curso CSS --&gt;</span><br>
+								&lt;html&gt;<br>
+								&lt;head&gt;<br>
+								&lt;title&gt;Portal web - aprenderaprogramar.com&lt;/title&gt;<br>
+								&lt;meta charset="utf-8"&gt;<br>
+								&lt;meta name="description" content="Portal web aprenderaprogramar.com"&gt;<br>
+								&lt;meta name="keywords" content="aprender, programar, cursos, libros"&gt;<br>
+								<strong>&lt;link rel="stylesheet" type="text/css" href="estilos.css"&gt;</strong><br>
+								&lt;/head&gt;<br>
+								<strong><span style="color:#008000;">&lt;!-- Aquí el resto del código del ejemplo --&gt;</span></strong><br>
+								&lt;/html&gt;</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</center>
+		<p style="text-align: justify;">
+			&nbsp;</p>
+		<p style="text-align: justify;">
+			&nbsp;</p>
+		<p style="text-align: justify;">
+			Ahora procedemos a visualizar el archivo HTML en nuestro navegador. Si se está cargando la hoja de estilos correctamente deberemos obtener el mismo resultado que habíamos obtenido con la aplicación de estilos interna. Prueba a hacer distintos cambios en el archivo css y visualiza los resultados.</p>
+		<p style="text-align: justify;">
+			&nbsp;</p>
+		<p style="text-align: justify;">
+			&nbsp;</p>
+		<p style="text-align: justify;">
+			<strong>¿QUÉ TIPO DE CSS USAR?</strong></p>
+		<p style="text-align: justify;">
+			En la siguiente tabla hacemos un resumen de las características de los distintos tipos de CSS que hemos visto hasta el momento:</p>
+		<table border="1" cellpadding="7" cellspacing="0">
+			<thead>
+				<tr style="background-color: rgb(204, 204, 204);">
+					<td>
+						<p style="text-align: center;">
+							<b>DECLARACIÓN CSS</b></p>
+					</td>
+					<td>
+						<p style="text-align: center;">
+							<b>ARCHIVOS AFECTADOS</b></p>
+					</td>
+					<td>
+						<p style="text-align: center;">
+							<b>CSS SE APLICA A</b></p>
+					</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<p style="text-align: center;">
+							<b>En línea</b></p>
+					</td>
+					<td>
+						<p style="text-align: center;">
+							Uno, aquel donde se realiza la declaración</p>
+					</td>
+					<td>
+						<p style="text-align: center;">
+							Una línea de código.</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p style="text-align: center;">
+							<b>Interna</b></p>
+					</td>
+					<td>
+						<p style="text-align: center;">
+							Uno, aquel en cuya cabecera se realiza la declaración</p>
+					</td>
+					<td>
+						<p style="text-align: center;">
+							Todos los elementos del archivo en los que resulte de aplicación el estilo</p>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p style="text-align: center;">
+							<b>Externa</b></p>
+					</td>
+					<td>
+						<p style="text-align: center;">
+							Todos los archivos que invoquen el archivo css</p>
+					</td>
+					<td>
+						<p style="text-align: center;">
+							Todos los elementos de los archivos afectados en que resulte de aplicación el estilo</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<p>
+			&nbsp;</p>
+		<p>
+			&nbsp;</p>
+		<p style="text-align: justify;">
+			¿Cuál de estas formas de aplicar CSS es mejor? ¿Cuál usar? En primer lugar cabe hacer una reflexión sobre qué forma de aplicar CSS hará nuestros desarrollos web más fácilmente mantenibles y aptos para ser modificados con poco esfuerzo. Parece claro que es la declaración externa la que mejor independiza los estilos del contenido y la que menor número de modificaciones implicará en general. Por ello es la forma de trabajar con CSS a la que debemos acostumbrarnos.</p>
+		<p style="text-align: justify;">
+			No obstante, cuando trabajes con desarrollos web comprobarás que también son de uso frecuente la aplicación de estilos en línea o interna. En algunos casos esto es debido a desconocimiento de la persona que realiza el desarrollo o a la forma de funcionamiento del programa con el que se ha creado la página web, pero en otros casos obedece a que se ha querido hacer así.</p>
+		<p style="text-align: justify;">
+			En ocasiones se opta por hacer modificaciones en línea porque se buscan efectos puntuales que sólo se quieren aplicar en un punto concreto y en ningún otro. En ocasiones se opta por hacer definiciones CSS internas porque se quiere afectar muy puntualmente a un archivo y a ningún otro. Y en otros casos, se usan los estilos en línea o internos simplemente “por las prisas” o “por ser lo más rápido”.</p>
+		<p style="text-align: justify;">
+			A efectos del navegador, una declaración en línea tiene precedencia sobre una declaración interna, y a su vez una declaración interna tiene precedencia sobre una declaración externa. Por tanto podríamos tener CSS sobreescrito varias veces: la declaración externa puede ser sobreescrita por la interna, y ésta a su vez por la en línea. El navegador aplicará el orden:</p>
+		<p>
+			<strong>Declaración en línea &gt; Declaración interna &gt; Declaración externa</strong></p>
+		<p>
+			&nbsp;</p>
+		<p style="text-align: justify;">
+			Podría ocurrir que los estilos que visualicemos en el navegador estén definidos “a trozos” de modo que parte de lo que se visualiza se debe a las declaraciones CSS externas, parte a las declaraciones CSS internas y parte a declaraciones en línea. Esto en general será indeseable, ya que hará difícil de mantener el desarrollo web, no se sabrá con certeza cómo se generan los estilos y el desarrollo puede terminar convirtiéndose en un caos difícil de mantener. También puede dar lugar a visualizaciones incorrectas o erróneas.</p>
+		<p style="text-align: justify;">
+			A modo de resumen y como recomendación: mantén los estilos de forma externa, lo más ordenadamente posible y sin utilizar redefiniciones internas ni en línea. Usa este tipo de definiciones (interna o en línea) exclusivamente cuando resulte necesario y comenta adecuadamente el código. Trabajar ordenadamente será algo que a la larga te resultará ventajoso, tanto a ti mismo como a otras personas que tengan que trabajar en desarrollos donde tú hayas participado.</p>
+		<p style="text-align: justify;">
+			&nbsp;</p>
+		<p style="text-align: justify;">
+			&nbsp;</p>
+		<p>
+			<strong>EJERCICIO 1</strong></p>
+		<p style="text-align: justify;">
+			Modifica el código HTML mostrado a continuación para cumplir con estos requisitos mediante la <strong>aplicación de estilos internos</strong>:</p>
+		<p>
+			a) Todas las etiquetas h1 deben mostrar su texto en color rojo.</p>
+		<p>
+			b) Todas las etiquetas h3 deben mostrar su texto en color verde.</p>
+		<p>
+			c) Todos los párrafos deben mostrar su texto en color brown (marrón).</p>
+		<center>
+			<table align="center" bgcolor="#bdbdbd" border="1" cellpadding="7" cellspacing="1" height="435" width="713">
+				<tbody>
+					<tr>
+						<td valign="top">
+							<p>
+								&lt;!DOCTYPE html&gt;</p>
+							<p>
+								&lt;html&gt;</p>
+							<p>
+								&lt;head&gt;</p>
+							<p>
+								&lt;title&gt;Portal web - aprenderaprogramar.com&lt;/title&gt;</p>
+							<p>
+								&lt;meta name="description" content="Portal web aprenderaprogramar.com"&gt;</p>
+							<p>
+								&lt;meta name="keywords" content="aprender, programar, cursos, libros"&gt;</p>
+							<p>
+								&lt;meta charset="utf-8"&gt;</p>
+							<p>
+								&lt;/head&gt;</p>
+							<p>
+								&lt;body&gt;</p>
+							<p>
+								&lt;p&gt;&lt;a href="principal.html" title="Página principal" &gt;Ir a la pagina principal&lt;/a&gt;&lt;/p&gt;</p>
+							<p>
+								&lt;h1&gt;Novedades&lt;/h1&gt;</p>
+							<p>
+								&lt;p&gt;Aquí presentamos las novedades del sitio.&lt;/p&gt;</p>
+							<p>
+								&lt;h3&gt;Lanzamos el producto X-FASHION&lt;/h3&gt;</p>
+							<p>
+								&lt;p&gt;Este producto permite estirar la piel hasta dejarla como la de un bebé.&lt;/p&gt;</p>
+							<p>
+								&lt;p&gt;&lt;img src="http://i.imgur.com/tq5Bs.png" title="Imagen del producto" alt="imagen producto x-fashion" /&gt;&lt;/p&gt;</p>
+							<p>
+								&lt;h3&gt;Mejoramos el producto T-MOTION&lt;/h3&gt;</p>
+							<p>
+								&lt;p&gt;Hemos lanzado una nueva versión del producto T-MOTION&lt;/p&gt;</p>
+							<p>
+								&lt;p&gt;&lt;img src="http://i.imgur.com/SpZyc.png" title="Imagen del proudcto tmotion" alt="imagen producto tmotion" /&gt;&lt;/p&gt;</p>
+							<p>
+								&lt;/body&gt;</p>
+							&lt;/html&gt;</td>
+					</tr>
+				</tbody>
+			</table>
+		</center>
+		<p>
+			&nbsp;</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			Para comprobar si tus respuestas son correctas puedes consultar en los foros aprenderaprogramar.com.</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			<strong>EJERCICIO 2</strong></p>
+		<p style="text-align: justify;">
+			Modifica el código HTML del ejercicio anterior para cumplir con estos requisitos mediante la aplicación de CSS externo definido <strong>en un archivo independiente</strong>, donde debes incluir al menos un comentario:</p>
+		<p>
+			a) Todas las etiquetas h1 deben mostrar su texto en color azul.</p>
+		<p>
+			b) Todas las etiquetas h3 deben mostrar su texto en color orange (naranja).</p>
+		<p>
+			c) Todos los párrafos deben mostrar su texto en color brown (marrón).</p>
+		<p>
+			&nbsp;</p>
+		<p>
+			Para comprobar si tus respuestas son correctas puedes consultar en los foros aprenderaprogramar.com.</p>
+		<p style="text-align: justify;">
+			&nbsp;</p>
+		<p style="text-align: justify;">
+			&nbsp;</p>
+		<p style="text-align: justify;">
+			&nbsp;</p>
+		<p style="text-align: justify;">
+			&nbsp;</p>
+		<p style="text-align: justify;">
+			&nbsp;</p>
+		<p style="text-align: justify;">
+			&nbsp;</p>
+	</div>
+	<div style="text-align: left">
+		<span style="font-size: 12px"><span>Para acceder a la información general sobre este curso y al listado completo de entregas pulsa en este link:&nbsp;<a href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=category&amp;id=75&amp;Itemid=203"><font color="#0066cc"> Ver curso completo.</font></a></span></span></div>
+</div>
+<p style="text-align: left">
+	Para&nbsp; hacer un comentario&nbsp;o consulta&nbsp;utiliza los&nbsp;<a href="https://www.aprenderaprogramar.com/foros/" target="_blank"><font color="#0066cc">foros aprenderaprogramar.com,</font></a> abiertos a cualquier persona independientemente de su nivel de conocimiento.</p><div class="attachmentsContainer">
+
+<div class="attachmentsList" id="attachmentsList_com_content_article_713">
+<table>
+<caption>Descargar archivo:</caption>
+<tbody>
+<tr class="odd"><td class="at_filename"><a class="at_icon" href="https://www.aprenderaprogramar.com/attachments/article/713/CU01010D%20estilos%20CSS%20internos%20y%20externos%20archivos%20extension%20css%20link%20rel.pdf" target="_blank" title="Download this file (CU01010D estilos CSS internos y externos archivos extension css link rel.pdf)"><img src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/pdf.gif" alt="Download this file (CU01010D estilos CSS internos y externos archivos extension css link rel.pdf)"></a><a class="at_url" href="https://www.aprenderaprogramar.com/attachments/article/713/CU01010D%20estilos%20CSS%20internos%20y%20externos%20archivos%20extension%20css%20link%20rel.pdf" target="_blank" title="Download this file (CU01010D estilos CSS internos y externos archivos extension css link rel.pdf)">CU01010D estilos CSS internos y externos archivos extension css link rel.pdf</a></td><td class="at_description">[&nbsp;]</td><td class="at_file_size">68 kB</td></tr>
+</tbody></table>
+</div>
+
+</div>		<ul class="pager pagenav">
+	<li class="previous">
+		<a class="hasTooltip" title="" aria-label="Artículo anterior: Tipos básicos de estilos CSS: estilos por defecto y CSS en línea (inline). Sobreescritura de estilos (CU01009D)" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=712:tipos-basicos-de-estilos-css-estilos-por-defecto-y-css-en-linea-inline-sobreescritura-de-estilos-cu01009d&amp;catid=75&amp;Itemid=203" rel="prev" data-original-title="Tipos básicos de estilos CSS: estilos por defecto y CSS en línea (inline). Sobreescritura de estilos (CU01009D)">
+			<span class="icon-chevron-left" aria-hidden="true"></span> <span aria-hidden="true">Anterior</span>		</a>
+	</li>
+	<li class="next">
+		<a class="hasTooltip" title="" aria-label="Artículo siguiente: Selectores CSS: id. Aplicar CSS a partes de una web. Ejemplos. Diferenciar etiquetas HTML en ids (CU01011D)" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=714:selectores-css-id-aplicar-css-a-partes-de-una-web-ejemplos-diferenciar-etiquetas-html-en-ids-cu01011d&amp;catid=75&amp;Itemid=203" rel="next" data-original-title="Selectores CSS: id. Aplicar CSS a partes de una web. Ejemplos. Diferenciar etiquetas HTML en ids (CU01011D)">
+			<span aria-hidden="true">Siguiente</span> <span class="icon-chevron-right" aria-hidden="true"></span>		</a>
+	</li>
+</ul>
+		
+		
+					
+	</div>
+</div>
+			   									</div>
+												<div class="mainbody-tl"></div><div class="mainbody-tr"></div><div class="mainbody-bl"></div><div class="mainbody-br"></div>
+											</div>
+			  							</div>
+			  						</div>
+			  					</div>    
+							</div></div></div></div><div class="body-surround-bottom"><div class="body-surround-bottom2"><div class="body-surround-bottom3"></div></div></div>
+					</div>
+					
+				</div>
+					<div id="rightcol">
+						<div class="rightcol-padding">
+							<div class="module-light"><div class="body-surround-top"><div class="body-surround-top2"><div class="body-surround-top3"></div></div></div>
+	<div class="body-surround"><div class="body-surround2"><div class="body-surround3">	
+		
+	<div class=" right:91">
+		<div class="side-mod">
+						<div class="module">
+				<div class="bannergroup">
+
+	<div class="banneritem">
+										<div style="margin-top:6px; text-align:center;">
+<!-- Comienzo 160x600 creado 260210 -->
+<script async="" src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/f(10).txt"></script>
+<ins class="adsbygoogle" style="display:inline-block;width:160px;height:600px" data-ad-client="ca-pub-9526571771177991" data-ad-slot="6699876101" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:600px;margin:0;padding:0;position:relative;visibility:visible;width:160px;background-color:transparent;"><iframe id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;border:0;width:160px;height:600px;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="160" height="600" frameborder="0" src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/ads.html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!1" data-google-query-id="CMO-kuXS4uwCFZfAWwodu5YK7Q" data-load-complete="true"></iframe></ins></ins></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<!-- Fin 160x600 creado 260210 -->
+</div>				<div class="clr"></div>
+	</div>
+
+</div>
+			</div>
+		</div>
+	</div>
+		
+		
+	<div class=" right:114">
+		<div class="side-mod">
+						<div class="module-header"><div class="module-header2"><div class="module-header3"><h3 class="module-title" style="visibility: visible;"><span>Donar</span> o colaborar</h3></div></div></div>
+						<div class="module">
+				
+
+<div class="custom">
+	<div>
+<p style="text-align: center;">Este sitio se mantiene abierto gracias al apoyo de muchas personas. Si crees que merece la pena apoyar económicamente este sitio web puedes realizar una donación o colaborar. <a title="Contactar con aprenderaprogramar.com" href="https://www.aprenderaprogramar.com/index.php?option=com_contact&amp;view=contact&amp;id=1&amp;Itemid=37">Contacta con nosotros.</a></p>
+</div></div>
+			</div>
+		</div>
+	</div>
+		
+		
+	<div class=" right:116">
+		<div class="side-mod">
+						<div class="module-header"><div class="module-header2"><div class="module-header3"><h3 class="module-title" style="visibility: visible;"><span>¿Puedo</span> yo aprender?</h3></div></div></div>
+						<div class="module">
+				
+
+<div class="custom">
+	<p style="text-align: center;">Seas o no del área informática, si quieres aprender a programar te ofrecemos una solución guiada y personalizada: realizar un curso tutorizado on-line. Con este tipo de curso, podrás aprender a programar de forma ágil y amena.<br> <br> <img style="width: 110px; height: 47px;" src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/an_oliva_png.png" alt=""></p>
+<p style="text-align: center;"><a title="enlace a articulo explica ranking" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=64&amp;Itemid=87" target="_self"><span style="font-size: 12px;">Acceder a detalles y precios de los cursos tutorizados on-line</span></a></p></div>
+			</div>
+		</div>
+	</div>
+		
+		
+	<div class=" right:120">
+		<div class="side-mod">
+						<div class="module-header"><div class="module-header2"><div class="module-header3"><h3 class="module-title" style="visibility: visible;"><span>Política</span> sobre cookies</h3></div></div></div>
+						<div class="module">
+				
+
+<div class="custom">
+	<p style="text-align: justify; margin-top: 0;"><span style="font-size: 11px;">Utilizamos cookies propias y de terceros para ofrecerte una mejor experiencia y servicio, de acuerdo a tus hábitos de navegación.<br> <br> Si continúas navegando, consideramos que aceptas su uso. Puedes obtener más información en nuestra <a href="http://aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=84&amp;Itemid=172" target="_blank">Política de Cookies</a>.</span></p></div>
+			</div>
+		</div>
+	</div>
+		
+		
+	<div class=" right:117">
+		<div class="side-mod">
+						<div class="module-header"><div class="module-header2"><div class="module-header3"><h3 class="module-title" style="visibility: visible;"><span>En</span> Facebook!</h3></div></div></div>
+						<div class="module">
+				
+
+<div class="custom">
+	<p style="text-align: center;">Ahora puedes seguirnos <a href="https://www.facebook.com/aprenderaprogramarcom" target="_blank">en Facebook</a>. Noticias, novedades y mucho más ¡Te esperamos!</p>
+<p style="text-align: center;"><a href="https://www.facebook.com/aprenderaprogramarcom" target="_blank"><img style="width: 120px; height: 50px;" src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/icon-small-facebook.gif" alt=""></a></p></div>
+			</div>
+		</div>
+	</div>
+		
+		
+	<div class=" right:90">
+		<div class="side-mod">
+						<div class="module-header"><div class="module-header2"><div class="module-header3"><h3 class="module-title" style="visibility: visible;"><span>RANKING</span> APR2+</h3></div></div></div>
+						<div class="module">
+				
+
+<div class="custom">
+	<p style="text-align: center;"><strong>Ranking de lenguajes y entornos de programación aprenderaprogramar.com</strong><br> &nbsp;</p>
+<p style="text-align: center;"><span style="text-decoration: underline;">NOVIEMBRE - DIC 2020</span></p>
+<p style="text-align: center;"><strong>1. Java / J2EE<br> </strong>2. Entornos Oracle<br> 3. .NET, C#<br> 4. Entornos SQL Server<br> 5. Php, MySql<br> 6. Android, iOS<br> 7. HTML, CSS<br> 8. JavaScript, Bootstrap<br> <br> <span style="color: #e05e19;"><a title="enlace a articulo explica ranking" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=29&amp;Itemid=51" target="_self"><span style="color: #e05e19;">Acceder a detalles sobre el ranking de programación aprenderaprogramar.com</span></a></span><br> <span style="color: #e05e19;"> <br> </span></p></div>
+			</div>
+		</div>
+	</div>
+		
+		
+	<div class=" right:113">
+		<div class="side-mod">
+						<div class="module-header"><div class="module-header2"><div class="module-header3"><h3 class="module-title" style="visibility: visible;"><span>FOROS</span> APR2+</h3></div></div></div>
+						<div class="module">
+				
+
+<div class="custom">
+	<p style="text-align: center;">Pregunta, responde, consulta, lee, intercambia...</p>
+<p style="text-align: center;"><a style="color: #e05e19;" href="http://www.aprenderaprogramar.com/foros"><strong> Participa!!!</strong> Entra en los foros aprenderaprogramar.com.</a></p></div>
+			</div>
+		</div>
+	</div>
+		
+		
+	<div class=" right:111">
+		<div class="side-mod">
+						<div class="module-header"><div class="module-header2"><div class="module-header3"><h3 class="module-title" style="visibility: visible;"><span>Lo</span> más leído</h3></div></div></div>
+						<div class="module">
+				<ul class="mostread mod-list">
+	<li itemscope="" itemtype="https://schema.org/Article">
+		<a href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=686:como-obtener-claves-o-contrasenas-de-redes-wifi-cracking-qa-por-naranjasq-ies-segura-una-red-inalambrica&amp;catid=45&amp;Itemid=164" itemprop="url">
+			<span itemprop="name">
+				Cómo obtener claves o contraseñas de redes wifi (cracking "a por naranjas") ¿Es segura una red inalámbrica?			</span>
+		</a>
+	</li>
+	<li itemscope="" itemtype="https://schema.org/Article">
+		<a href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=28:quiero-aprender-a-programar-icomo-empiezo&amp;catid=23&amp;Itemid=73" itemprop="url">
+			<span itemprop="name">
+				Quiero aprender a programar: ¿Cómo empiezo?			</span>
+		</a>
+	</li>
+	<li itemscope="" itemtype="https://schema.org/Article">
+		<a href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=542:que-es-un-servidor-y-cuales-son-los-principales-tipos-de-servidores-proxydns-webftppop3-y-smtp-dhcp&amp;catid=57&amp;Itemid=179" itemprop="url">
+			<span itemprop="name">
+				Qué es un servidor y cuáles son los principales tipos de servidores (proxy,dns, web,ftp,pop3 y smtp, dhcp...).			</span>
+		</a>
+	</li>
+	<li itemscope="" itemtype="https://schema.org/Article">
+		<a href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=419:tipos-de-datos-java-tipos-primitivos-int-boolean-y-objeto-string-array-o-arreglo-variables-cu00621b&amp;catid=68&amp;Itemid=188" itemprop="url">
+			<span itemprop="name">
+				Tipos de datos Java. Tipos primitivos (int, boolean...) y objeto (String, array o arreglo...) Variables (CU00621B)			</span>
+		</a>
+	</li>
+	<li itemscope="" itemtype="https://schema.org/Article">
+		<a href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=480:formatos-de-texto-html-negrita-cursiva-tachado-subrayado-superindice-subindice-b-y-strong-cu00713b&amp;catid=69&amp;Itemid=192" itemprop="url">
+			<span itemprop="name">
+				Formatos de texto HTML: negrita, cursiva, tachado, subrayado, superíndice, subíndice. b y strong (CU00713B)			</span>
+		</a>
+	</li>
+	<li itemscope="" itemtype="https://schema.org/Article">
+		<a href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=236:ejercicios-resueltos-en-visual-basic-con-forms-labels-textbox-y-buttons-command-ejemplos-cu00322a&amp;catid=37&amp;Itemid=61" itemprop="url">
+			<span itemprop="name">
+				Ejercicios resueltos en Visual Basic con Forms, Labels, Textbox y Buttons (Command). Ejemplos (CU00322A)			</span>
+		</a>
+	</li>
+	<li itemscope="" itemtype="https://schema.org/Article">
+		<a href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=435:ique-es-y-para-que-sirve-html-el-lenguaje-mas-importante-para-crear-paginas-webs-html-tags-cu00704b&amp;catid=69&amp;Itemid=192" itemprop="url">
+			<span itemprop="name">
+				¿Qué es y para qué sirve HTML? El lenguaje más importante para crear páginas webs. HTML tags (CU00704B)			</span>
+		</a>
+	</li>
+	<li itemscope="" itemtype="https://schema.org/Article">
+		<a href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=140:tipos-de-variables-en-visual-basic-integer-single-double-string-object-boolean-etc-ejemplos-cu00308a&amp;catid=37&amp;Itemid=61" itemprop="url">
+			<span itemprop="name">
+				Tipos de variables en Visual Basic. Integer, Single, Double, String, Object, Boolean, etc. Ejemplos (CU00308A)			</span>
+		</a>
+	</li>
+	<li itemscope="" itemtype="https://schema.org/Article">
+		<a href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=389:configurar-java-en-windows-variables-de-entorno-javahome-y-path-cu00610b&amp;catid=68&amp;Itemid=188" itemprop="url">
+			<span itemprop="name">
+				Configurar Java en Windows. Variables de entorno JAVA_HOME y PATH (CU00610B)			</span>
+		</a>
+	</li>
+	<li itemscope="" itemtype="https://schema.org/Article">
+		<a href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=508:hipervinculos-links-o-enlaces-html-etiqueta-a-atributos-href-target-y-title-tipos-de-links-img-cu00717b&amp;catid=69&amp;Itemid=192" itemprop="url">
+			<span itemprop="name">
+				Hipervínculos, links o enlaces HTML. Etiqueta a. Atributos href, target y title. Tipos de links. img (CU00717B)			</span>
+		</a>
+	</li>
+</ul>
+			</div>
+		</div>
+	</div>
+	</div></div></div><div class="body-surround-bottom"><div class="body-surround-bottom2"><div class="body-surround-bottom3"></div></div></div>		
+							</div>
+						</div>
+						
+					</div></div></div></div>				</div>
+			</div>
+			<!--Begin Bottom Section-->
+			<div id="bottom-bg">
+				<div class="wrapper">
+										<div id="bottom-menu"><div id="bottom-menu2"><div id="bottom-menu3"><div id="bottom-menu-overlay">
+						
+					</div></div></div></div>
+														</div>
+			</div>
+						<div id="bottom">
+				<div class="wrapper">
+										<div id="bottommodules" class="spacer w99">
+												<div class="block full">
+								<div class=" bottom:119">
+		<div class="moduletable">
+						
+
+<div class="custom">
+	<div style="text-align: center;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; Copyright 2006-2020 aprenderaprogramar.com &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; La web abierta a cualquier persona interesada en la programación</div></div>
+		</div>
+	</div>
+	
+						</div>
+																							</div>
+															<div class="footer-mod">
+						
+					</div>
+														</div>
+			</div>
+						<!--End Bottom Section-->
+		</div></div>
+					
+<div id="sbox-overlay" aria-hidden="true" tabindex="-1" style="z-index: 65555; opacity: 0;"></div><div id="sbox-window" role="dialog" aria-hidden="true" class="shadow" style="z-index: 65557;"><div id="sbox-content" style="opacity: 0;"></div><a id="sbox-btn-close" href="https://www.aprenderaprogramar.com/index.php?option=com_content&amp;view=article&amp;id=713:formas-de-aplicar-css-interno-y-externo-link-rel-y-archivos-de-extension-css-comentarios-css-cu01010d&amp;catid=75&amp;Itemid=203#" role="button" aria-controls="sbox-window"></a></div><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done" style="display: none !important;"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><ins id="aswift_1_anchor" style="display:block;border:none;height:0px;margin:0;padding:0;position:relative;visibility:visible;width:0px;background-color:transparent;"><iframe id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;border:0;width:undefinedpx;height:undefinedpx;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" frameborder="0" src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/ads(1).html" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" data-google-container-id="a!1" data-load-complete="true"></iframe></ins></ins></ins><iframe id="google_osd_static_frame_3622962252321" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;" src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/saved_resource(2).html"></iframe></body><iframe id="google_esf" name="google_esf" src="./Formas de aplicar CSS_ interno y externo. link rel y archivos de extensión css. Comentarios CSS_files/zrt_lookup.html" data-ad-client="ca-pub-9526571771177991" style="display: none;"></iframe></html>
